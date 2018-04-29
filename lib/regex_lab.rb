@@ -22,7 +22,7 @@ else
 end
 end
 def valid_phone_number?(phone)
-  if phone.match(/\W+\d{3}+\W+d{3}+\W+\d{4}+\b|\d{3}+\W+d{3}+\W+\d{4}+\b/)
+  if phone.match(/\d{3}+\W+\d{3}+\W+\d{4}|\W+d{3}+\W+\d{3}+\W+\d{4}/)
     true
   else
     false
